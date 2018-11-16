@@ -1,25 +1,15 @@
-import React from 'react'
+import React, {Component} from 'react';
 import {
   View,
   Text,
   Button,
-  StyleSheet,
-  AsyncStorage
-} from 'react-native'
-import { goToAuth } from './navigation'
+  StyleSheet
+} from 'react-native';
+import { goToAuth } from './navigation';
 import {Navigation} from 'react-native-navigation';
 import Service from './Service';
 
-export default class Home extends React.Component {
-  static get options() {
-    return {
-      topBar: {
-        title: {
-          text: 'Home'
-        },
-      }
-    };
-  }
+export default class Home extends Component {
   logout = () => {
     Service.removeItem("USER_KEY")
       .then((result) => {

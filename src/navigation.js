@@ -3,6 +3,7 @@ import { Navigation } from 'react-native-navigation'
 export const goToAuth = () => Navigation.setRoot({
   root: {
     bottomTabs: {
+      animated: false,
       id: 'BottomTabsId',
       children: [
         {
@@ -41,10 +42,15 @@ export const goHome = () => Navigation.setRoot({
       children: [
         {
           component: {
-            name: 'Home',
+            name: 'Home'
           }
-        }
-    ],
+        },
+      ],
+      options: {
+        topBar: {
+          title: { text: 'Home' }
+        },
+      },
     }
   }
 })

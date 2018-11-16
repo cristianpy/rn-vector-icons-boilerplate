@@ -1,9 +1,9 @@
-import React, {Component} from 'react'
+import React, {Component} from 'react';
 import {
   View,
   Text,
   StyleSheet
-} from 'react-native'
+} from 'react-native';
 
 import { goToAuth, goHome } from './navigation';
 import Service from './Service';
