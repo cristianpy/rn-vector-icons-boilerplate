@@ -3,17 +3,24 @@ import { Navigation } from 'react-native-navigation'
 export const goToAuth = () => Navigation.setRoot({
   root: {
     bottomTabs: {
-      animated: false,
       id: 'BottomTabsId',
+      options: {
+        bottomTabs: {
+          titleDisplayMode: 'alwaysShow',
+          iconInsets: { top: 5, bottom: -5, }
+          // currentTabIndex: 1,
+        },
+      },
       children: [
         {
           component: {
             name: 'Login',
             options: {
               bottomTab: {
-                fontSize: 12,
-                text: 'Login',
-                icon: require('./login.png')
+                text: 'Login2',
+                alignment: 'center',
+                icon: require('./login.png'),
+                iconInsets: { top: 5, bottom: -5, }
               }
             }
           },
@@ -23,10 +30,11 @@ export const goToAuth = () => Navigation.setRoot({
             name: 'Registro',
             options: {
               bottomTab: {
-                text: 'Registro',
                 fontSize: 12,
-                icon: require('./registro.png')
-              }
+                text: 'Registro',
+                alignment: 'center',
+                icon: require('./registro.png'),
+              },
             }
           },
         },
@@ -42,15 +50,18 @@ export const goHome = () => Navigation.setRoot({
       children: [
         {
           component: {
-            name: 'Home'
+            name: 'Home',
+            options: {
+              topBar: {
+                title: { 
+                  text: 'Home', 
+                  alignment: 'center' 
+                },
+              },
+            },
           }
         },
       ],
-      options: {
-        topBar: {
-          title: { text: 'Home' }
-        },
-      },
     }
   }
 })

@@ -34,6 +34,14 @@ export default class Home extends Component {
             Navigation.push(this.props.componentId, {
               component: {
                 name: 'Screen2',
+                options: {
+                  topBar: {
+                    title: { 
+                      text: 'Screen2', 
+                      alignment: 'center' 
+                    },
+                  },
+                },
               }
             });
           }}
