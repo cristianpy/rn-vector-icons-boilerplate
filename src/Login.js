@@ -35,7 +35,7 @@ export default class Login extends Component {
           placeholder='Usuario'
           autoCapitalize="none"
           autoCorrect={false}
-          placeholderTextColor='white'
+          // placeholderTextColor='white'
           onChangeText={val => this.onChangeText('username', val)}
         />
         <TextInput
@@ -43,7 +43,7 @@ export default class Login extends Component {
           placeholder='Clave'
           autoCapitalize="none"
           secureTextEntry={true}
-          placeholderTextColor='white'
+          // placeholderTextColor='white'
           onChangeText={val => this.onChangeText('password', val)}
         />
         <Button
@@ -61,11 +61,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '500',
     height: 55,
-    backgroundColor: '#42A5F5',
+    // backgroundColor: '#42A5F5',
     margin: 10,
-    color: 'white',
+    // color: 'white',
     padding: 8,
-    borderRadius: 14
+    borderWidth: 1,
+    borderColor: "black"
   },
   container: {
     flex: 1,

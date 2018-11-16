@@ -29,7 +29,7 @@ export default class Registro extends Component {
           style={styles.input}
           placeholder='Usuario'
           autoCapitalize="none"
-          placeholderTextColor='white'
+          // placeholderTextColor='white'
           onChangeText={val => this.onChangeText('username', val)}
         />
         <TextInput
@@ -37,21 +37,21 @@ export default class Registro extends Component {
           placeholder='Clave'
           secureTextEntry={true}
           autoCapitalize="none"
-          placeholderTextColor='white'
+          // placeholderTextColor='white'
           onChangeText={val => this.onChangeText('password', val)}
         />
         <TextInput
           style={styles.input}
           placeholder='Correo'
           autoCapitalize="none"
-          placeholderTextColor='white'
+          // placeholderTextColor='white'
           onChangeText={val => this.onChangeText('email', val)}
         />
         <TextInput
           style={styles.input}
           placeholder='Celular'
           autoCapitalize="none"
-          placeholderTextColor='white'
+          // placeholderTextColor='white'
           onChangeText={val => this.onChangeText('phone_number', val)}
         />
         <Button
@@ -67,11 +67,13 @@ const styles = StyleSheet.create({
   input: {
     width: 350,
     height: 55,
-    backgroundColor: '#42A5F5',
+    // backgroundColor: '#42A5F5',
     margin: 10,
     padding: 8,
-    color: 'white',
-    borderRadius: 14,
+    // color: 'white',
+    // borderRadius: 14,
+    borderWidth: 1,
+    borderColor: "black"
   },
   container: {
     flex: 1,

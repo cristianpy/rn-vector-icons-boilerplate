@@ -12,7 +12,7 @@ export const goToAuth = () => Navigation.setRoot({
               bottomTab: {
                 fontSize: 12,
                 text: 'Login',
-                icon: require('./signin.png')
+                icon: require('./login.png')
               }
             }
           },
@@ -24,7 +24,7 @@ export const goToAuth = () => Navigation.setRoot({
               bottomTab: {
                 text: 'Registro',
                 fontSize: 12,
-                icon: require('./signup.png')
+                icon: require('./registro.png')
               }
             }
           },
