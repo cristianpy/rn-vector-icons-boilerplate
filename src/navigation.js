@@ -17,7 +17,7 @@ export const goToAuth = () => Navigation.setRoot({
             name: 'Login',
             options: {
               bottomTab: {
-                text: 'Login2',
+                text: 'Login',
                 alignment: 'center',
                 icon: require('./login.png'),
                 iconInsets: { top: 5, bottom: -5, }
