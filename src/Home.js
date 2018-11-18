@@ -50,8 +50,7 @@ export default class Home extends Component {
           }}
           title="Ver siguiente screen"
         />
-                  {myIcon}
-                  {myButton}
+        {myIcon}
       </View>
     )
   }
