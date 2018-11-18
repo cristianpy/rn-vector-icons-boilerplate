@@ -10,7 +10,7 @@ import {Navigation} from 'react-native-navigation';
 import Service from './Service';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
-const myIcon = (<Icon name="rocket" size={30} color="#900" />)
+const myIcon = (<Icon name="rocket" size={30} color="#900" />);
 
 export default class Home extends Component {
   logout = () => {
@@ -51,6 +51,7 @@ export default class Home extends Component {
           title="Ver siguiente screen"
         />
                   {myIcon}
+                  {myButton}
       </View>
     )
   }
